@@ -2,50 +2,53 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
+* {
     font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size:2vh;
+}
+@media screen and (max-height: 666px) {
+    * {
+        font-size:2vw;
+    }
+}
+body {
+    margin: 1%;
     background: #0a0a0a;
     color: #ffffff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+/*     height:100vh; */
+/*     width:100%; */
 }
 
 .container {
+    padding-left:1vw;
+    padding-right:1vw;
     display: flex;
-    height: 100vh;
+    flex-direction:column;
+/*     height:100vh; */
+    width:100%;
 }
-
 .logo {
-    position: absolute;
-    left: 40px;
-    padding-top: 40px;
-}
 
+    padding:4vh;
+}
 .logo-text {
-    position: absolute;
-    font-size: 48px;
-    padding-top: 15%;
-    padding-left: 8px;
-    letter-spacing: 2px;
+    font-size: 5vh;
 }
-
-.rotate-text {
-    display: none;
-}
-
 .menu {
-    width: 300px;
-    padding-top: 160px;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
+    height:100px;
+    flex:1;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
 .menu-btn {
     background: none;
     border: none;
     color: #c99f75;
-    font-size: 22px;
-    text-align: left;
     margin: 6px 0;
     cursor: pointer;
     transition: 0.2s;
@@ -63,8 +66,10 @@ body {
 }
 
 .content {
-    flex: 1;
-    padding: 124px 80px;
+    padding-left:5%;
+    margin:auto;
+    width:92%;
+    display:flex;
 }
 
 .tab {
@@ -76,45 +81,12 @@ body {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 5vh;
     margin-bottom: 10px;
 }
+.container2 {
 
-span {
-    font-size: 50px;
-}
-
-@media screen and (max-width: 666px) {
-    body {
-        font-family: 'Segoe UI', Tahoma, sans-serif;
-        background: #0a0a0a;
-        color: #ffffff;
-    }
-
-    .logo {display: none;}
-
-    .logo-text {display: none;}
-
-    .rotate-text {
-        display: contents;
-        transform: translateX(25px);
-    }
-
-    .menu {display: none;}
-
-    .menu-btn {display: none;}
-
-    .menu-btn:hover {display: none;}
-
-    .menu-btn.active {display: none;}
-
-    .content {display: none;}
-
-    .tab {display: none;}
-
-    .tab.active {display: none;}
-
-    h2 {display: none;}
-
-    span {display: none;}
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
 }
