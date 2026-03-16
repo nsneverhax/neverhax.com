@@ -6,7 +6,11 @@
     font-family: 'Segoe UI', Tahoma, sans-serif;
     font-size:2vh;
 }
-
+@media screen and (max-height: 666px) {
+    * {
+        font-size:2vw;
+    }
+}
 body {
     margin: 1%;
     background: #0a0a0a;
