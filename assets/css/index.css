@@ -69,3 +69,64 @@ h2 {
 span {
     font-size: 50px;
 }
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        position: relative;
+        left: 21px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .logo span {
+        display: block;
+        font-size: 32px;
+    }
+
+    .menu {
+        width: 100%;
+        padding: 10px 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-btn {
+        font-size: 16px;
+        margin: 6px;
+    }
+
+    .menu-btn:hover {
+        transform: none;
+    }
+
+    .menu-btn.active {
+        color: #ffffff;
+        transform: none;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
