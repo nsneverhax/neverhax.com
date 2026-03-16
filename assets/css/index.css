@@ -1,6 +1,10 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: "gh-font";
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     background: #0a0a0a;
     color: #ffffff;
 }
@@ -14,8 +18,18 @@ body {
     position: absolute;
     left: 40px;
     padding-top: 40px;
-    font-size: 28px;
+}
+
+.logo-text {
+    position: absolute;
+    font-size: 48px;
+    padding-top: 15%;
+    padding-left: 8px;
     letter-spacing: 2px;
+}
+
+.rotate-text {
+    display: none;
 }
 
 .menu {
@@ -39,7 +53,7 @@ body {
 }
 
 .menu-btn:hover {
-    color: white;
+    color: #ffffff;
     transform: translateX(10px);
 }
 
@@ -70,63 +84,37 @@ span {
     font-size: 50px;
 }
 
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .logo {
-        position: relative;
-        left: 21px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .logo img {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .logo span {
-        display: block;
-        font-size: 32px;
-    }
-
-    .menu {
-        width: 100%;
-        padding: 10px 20px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .menu-btn {
-        font-size: 16px;
-        margin: 6px;
-    }
-
-    .menu-btn:hover {
-        transform: none;
-    }
-
-    .menu-btn.active {
+@media screen and (max-width: 666px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: #0a0a0a;
         color: #ffffff;
-        transform: none;
     }
 
-    .content {
-        padding: 30px 20px;
+    .logo {display: none;}
+
+    .logo-text {display: none;}
+
+    .rotate-text {
+        display: contents;
+        transform: translateX(25px);
     }
 
-    h2 {
-        font-size: 28px;
-    }
+    .menu {display: none;}
 
-    iframe {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
+    .menu-btn {display: none;}
+
+    .menu-btn:hover {display: none;}
+
+    .menu-btn.active {display: none;}
+
+    .content {display: none;}
+
+    .tab {display: none;}
+
+    .tab.active {display: none;}
+
+    h2 {display: none;}
+
+    span {display: none;}
 }
