@@ -7,81 +7,97 @@
     <meta property="og:type" content="object" />
     <meta property="og:site_name" content="neverhax.com" />
     <title>NeverHax</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/index_new.css"> <!--New CSS-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css"/>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="images/logo.png" style="height:5vh" />
-            <span class="logo-text">NeverHax.com</span>
+    <div class="shadow">
+        <div class="container">
+            <input id="Neverhax" type="radio" name="navigation" class="menu-btn active" data-tab="neverhax" checked> <label for="Neverhax"><div class="logo">
+                <img src="/images/logo.png" width="96px" height="96px" />
+                <span class="logo-text">NeverHax.com</span>
+            </div></label></input>
 
-        </div>
-
-    <div class="container2">
-        <div class="menu">
-            <button class="menu-btn active" data-tab="neverhax">NEVERHAX</button>
-            <button class="menu-btn" data-tab="bettergh3">BETTERGH3</button>
-            <button class="menu-btn" data-tab="ghpermadeath">PERMADEATH</button>
-            <button class="menu-btn" data-tab="gh3dx">GH3DX</button>
-            <button class="menu-btn" data-tab="fastgh3">FASTGH3</button>
-            <button class="menu-btn" data-tab="bettergha">BETTERGHA</button>
-            <button class="menu-btn" data-tab="worplus">WOR+</button>
-        </div>
-
-    <div class="content">
-            <div class="tab active" id="neverhax">
-                <h2>NeverHax</h2>
-                <p>NeverHax is a community dedicated to modding games developed by Neversoft Studios, specifically the Guitar Hero games that use Q Script as their main scripting language.</p>
-                <a href="https://github.com/nsneverhax"><p>NeverHax GitHub</p></a>
-                <a href="https://discord.gg/FcZ7yX3rNY"><p>NeverHax Discord</p></a>
+            <div class="menu">
+                <input id="BetterGH3" type="radio" name="navigation" class="menu-btn" data-tab="bettergh3"><label for="BetterGH3"><img src="/images/frets/fret_g.png">BETTERGH3</label></input>
+                <input id="PermaDeath" type="radio" name="navigation"  class="menu-btn" data-tab="ghpermadeath"><label for="PermaDeath"><img src="/images/frets/fret_r.png">PERMADEATH</label></input>
+                <input id="GH3DX" type="radio" name="navigation"  class="menu-btn" data-tab="gh3dx"><label for="GH3DX"><img src="/images/frets/fret_y.png">GH3DX</label></input>
+                <input id="FastGH3" type="radio" name="navigation"  class="menu-btn" data-tab="fastgh3"><label for="FastGH3"><img src="/images/frets/fret_b.png">FASTGH3</label></input>
+                <input id="betterGHA" type="radio" name="navigation"  class="menu-btn" data-tab="bettergha"><label for="betterGHA"><img src="/images/frets/fret_o.png">BETTERGHA</label></input>
+                <input id="WORPlus" type="radio" name="navigation"  class="menu-btn" data-tab="worplus"><label for="WORPlus"><img src="/images/frets/fret_p.png">WOR+</label></input>
             </div>
 
-            <div class="tab" id="bettergh3">
-                <h2>BetterGH3</h2>
-                <p>BetterGH3 is an all-in-one package that gives you the definitive near-vanilla console experience in one portable, easy-to-install bundle!</p>
-                <a href="https://youtu.be/RWRoxHwAM9E?si=oNsvQlfhI2jeF7Zp"><p>BetterGH3 Trailer</p></a>
-                <a href="https://drive.google.com/drive/folders/1gJgm-GjJ70KZ3hVzlDR8e8AQy_Y8D9RU"><p>Google Drive</p></a>
-                <p>NOTE: Google Drive is almost always rate limited, use an alternative if it doesn't work.</p>
-                <a href="https://mega.nz/folder/xdES1YpL#tj9dxP5H9P35jtASlKIVHw"><p>MEGA</p></a>
-                <a href="https://www.mediafire.com/folder/abryhgsjw097z/BetterGH3"><p>MediaFire</p></a>
-            </div>
+            <div class="content">
+                <div class="tab active" id="neverhax">
+                    <h2>NeverHax</h2>
+                    <p>NeverHax is a community dedicated to modding games developed by Neversoft Studios, specifically the Guitar Hero games that use Q Script as their main scripting language.</p>
+                    <div class="stickynote">
+                        Socials <br>
+                        <a href="https://github.com/nsneverhax"><img src="/images/buttons/Github.png"></a>
+                        <a href="https://discord.gg/FcZ7yX3rNY"><img src="/images/buttons/Discord.png"></a>
+                    </div>
+                    <div style="display:flex;flex-direction:row;justify-content:space-around;"></div>
+                </div>
 
-            <div class="tab" id="ghpermadeath">
-                <h2>Neversoft Guitar Hero Permadeath</h2>
-                <p>Inspired by a mod for Guitar Hero II by jnack, permadeath forces you to Full Combo (FC) every song in a row. If you miss one note, your progress will be deleted and you have to start over.</p>
-                <a href="https://github.com/FregRB/NS-GH-Permadeath/releases/tag/gh3_v3"><p>GH3 Download</p></a>
-                <a href="https://github.com/FregRB/NS-GH-Permadeath/releases/tag/gha_v1"><p>GHA Download</p></a>
-                <br />
-                <h2>Harmonix Guitar Hero Permadeath</h2>
-                <p>Permadeath is a challenge where you play through the career mode, but if you miss even ONCE, you lose a life. These mods are available for several different games.</p>
-                <p>Can be found officially here at MiloHax's website <a href="https://milohax.org/permadeath">Click Here</a></p>
-            </div>
+                <div class="tab" id="bettergh3">
+                    <h2>BetterGH3</h2>
+                    <p>BetterGH3 is an all-in-one package that gives you the definitive near-vanilla console experience in one portable, easy-to-install bundle!</p>
+                    <div class="stickynote" style="transform: rotate(-4deg)">
+                        <a href="https://youtu.be/RWRoxHwAM9E?si=oNsvQlfhI2jeF7Zp"><p>BetterGH3 Trailer</p></a>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RWRoxHwAM9E" title="" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    </div>
+                    <div>
+                        <p>Download Now!</p>
+                        <a href="https://drive.google.com/drive/folders/1gJgm-GjJ70KZ3hVzlDR8e8AQy_Y8D9RU"><img src="/images/buttons/GDrive.png" title="NOTE: Google Drive is almost always rate limited, use an alternative if it doesn't work."></a>
+                        <a href="https://mega.nz/folder/xdES1YpL#tj9dxP5H9P35jtASlKIVHw"><img src="/images/buttons/MEGA.png"></a>
+                        <a href="https://www.mediafire.com/folder/abryhgsjw097z/BetterGH3"><img src="/images/buttons/MediaFire.png"></a>
+                    </div>
+                </div>
 
-            <div class="tab" id="gh3dx">
-                <h2>Guitar Hero 3 Deluxe</h2>
-                <p>Guitar Hero III Deluxe is a Quality-of-Life Mod for all platforms.</p>
-                <a href="https://github.com/nsneverhax/guitar-hero-3-deluxe"><p>Guitar Hero 3 Deluxe GitHub</p></a>
-            </div>
+                <div class="tab" id="ghpermadeath">
+                    <h2>Neversoft Guitar Hero Permadeath</h2>
+                    <p>Inspired by a mod for Guitar Hero II by jnack, permadeath forces you to Full Combo (FC) every song in a row. If you miss one note, your progress will be deleted and you have to start over.</p>
+                    <a href="https://github.com/FregRB/NS-GH-Permadeath/releases/tag/gh3_v3"><p>GH3 Download</p></a>
+                    <a href="https://github.com/FregRB/NS-GH-Permadeath/releases/tag/gha_v1"><p>GHA Download</p></a>
+                    <br />
+                    <h2>Harmonix Guitar Hero Permadeath</h2>
+                    <p>Permadeath is a challenge where you play through the career mode, but if you miss even ONCE, you lose a life. These mods are available for several different games.</p>
+                    <p>Can be found officially here at MiloHax's website <a href="https://milohax.org/permadeath"><br />Click Here</a></p>
+                </div>
 
-            <div class="tab" id="fastgh3">
-                <h2>FastGH3</h2>
-                <p>Minimalist Guitar Hero 3 mod with one click play and numerous gameplay fixes and additions</p>
-                <a href="https://donnaken15.com/FastGH3/"><p>FastGH3 Website</p></a>
-                <a href="https://github.com/donnaken15/FastGH3"><p>FastGH3 GitHub</p></a>
-            </div>
+                <div class="tab" id="gh3dx">
+                    <h2>Guitar Hero 3 Deluxe</h2>
+                    <p>Guitar Hero III Deluxe is a Quality-of-Life Mod for all platforms.</p>
+                    <a href="https://github.com/nsneverhax/guitar-hero-3-deluxe"><p>Guitar Hero 3 Deluxe GitHub</p></a>
+                </div>
 
-            <div class="tab" id="bettergha">
-                <h2>BetterGHA</h2>
-                <p>BetterGHA is an all-in-one package that gives you a large Quality-of-Life handle when playing GH:Aerosmith on PC that vanilla doesn't.</p>
-                <a href="https://drive.google.com/drive/u/0/folders/1F38W-zhWQewpQjWih2eQk0AJgNiyj91U"><p>BetterGHA Direct Download</p></a>
-            </div>
+                <div class="tab" id="fastgh3">
+                    <h2>FastGH3</h2>
+                    <p>Minimalist Guitar Hero 3 mod with one click play and numerous gameplay fixes and additions</p>
+                    <a href="https://donnaken15.com/FastGH3/"><p>FastGH3 Website</p></a>
+                    <a href="https://github.com/donnaken15/FastGH3"><p>FastGH3 GitHub</p></a>
+                    <div class="stickynote">
+                    <a href="https://www.youtube.com/watch?v=GsdOQrJaWSg">FastGH3 1.1 Promo</a><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GsdOQrJaWSg" title="" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    </div>
+                </div>
 
-            <div class="tab" id="worplus">
-                <h2>GH:WOR+</h2>
-                <p>"Quality of life" improvement mod for GH:WoR</p>
-                <a href="https://github.com/kernaltrap8/WoR-Plus"><p>GHWOR+ GitHub</p></a>
+                <div class="tab" id="bettergha">
+                    <h2>BetterGHA</h2>
+                    <p>BetterGHA is an all-in-one package that gives you a large Quality-of-Life handle when playing GH:Aerosmith on PC that vanilla doesn't.</p>
+                    <a href="https://drive.google.com/drive/u/0/folders/1F38W-zhWQewpQjWih2eQk0AJgNiyj91U"><p>BetterGHA Direct Download</p></a>
+                </div>
+
+                <div class="tab" id="worplus">
+                    <h2>GH:WOR+</h2>
+                    <p>"Quality of life" improvement mod for GH:WoR</p>
+                    <a href="https://github.com/kernaltrap8/WoR-Plus"><p>GHWOR+ GitHub</p></a>
+                </div>
+                <div class="stickynote" style="font-size: 1.5vh;margin-bottom:0;transform: rotate(0deg);">
+                            © 2026 metriccepheid, ioletsgo, NeverHax<br /><br />
+                            We are not afiliated with Neversoft Entertainment, Inc. or any of its publishers. Everything we create will forever be free of charge. If you paid, you were scammed.
+                        </div>
             </div>
         </div>
     </div>
