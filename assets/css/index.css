@@ -87,8 +87,9 @@ input[type="radio"] {
 
 .menu {
     border-bottom:#6a722c dashed;
-    font-family: Impact;
+    font-family: Impact, Fantasy;
     font-style:italic;
+/*     font-weight:Bold; */
     font-size:2vh;
     width:90%;
     display:flex;

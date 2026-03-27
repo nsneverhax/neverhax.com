@@ -1,8 +1,4 @@
 @font-face {
-  font-family:'paralucent';
-  src: url('/assets/fonts/paralucent.otf') format('opentype');
-}
-@font-face {
   font-family:nightmarehero;
   src: url('/assets/fonts/nightmarehero.ttf')
 }
