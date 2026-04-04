@@ -130,13 +130,13 @@ input[type="radio"] {
 .logo {
     cursor:pointer;
     transform: rotate(2deg);
-    margin-top:4vh;
+    margin-top:6vh;
     height:10vh;
     display:flex;
     align-items: center;
     img {
-        height: 9vh;
-        width: 9vh;
+        height: 10vh;
+        width: 40vh;
     }
 }
 
