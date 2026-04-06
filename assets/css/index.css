@@ -1,3 +1,7 @@
+.rare body {
+    background-image: url('/images/woodboards_gh3.png');
+}
+
 body {
     overflow-y: scroll;
     margin:0;
@@ -61,7 +65,7 @@ input[type="radio"] {
     flex-direction: column;
     background-image: url('/images/paper.png');
     background-size:cover;
-    background-position: center;
+    background-position: top;
     background-position-y: top;
     width:100%;
     min-height:100vh;
@@ -89,13 +93,14 @@ input[type="radio"] {
     border-bottom:#6a722c dashed;
     font-family: Impact, Fantasy;
     font-style:italic;
-/*     font-weight:Bold; */
+/*  font-weight:Bold; */
     font-size:2vh;
     width:90%;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-evenly;
+
     :checked + label {
         color:black;
         scale:1.2 !important;
@@ -105,6 +110,7 @@ input[type="radio"] {
                 filter: drop-shadow(10px 10px 0vh black);
             }
         }
+
     label {
         display:flex;
         align-items: center;
@@ -112,14 +118,16 @@ input[type="radio"] {
         transform: rotate(-5deg);
         cursor:pointer;
     }
+
     label:hover {
         color:black;
         scale:1.1;
         transform: rotate(0deg);
         img {
             filter:grayscale(50%);
-            }
+        }
     }
+
     img {
         height:4vh;
         margin-right:0.5vh;
@@ -177,15 +185,17 @@ input[type="radio"] {
 
 /* Smart Phone Vertical Specific Tweaks */
 @media screen and (max-width: 666px) {
-    body {
-    }
+    body {}
+
     .shadow {
         width: 100% !important;
     }
+
     .content {
         padding-right: 5vh !important;
         padding-left: 5vh !important;
     }
+
     .stickynote {
         transform: rotate(0deg) !important;
         iframe {
@@ -194,6 +204,7 @@ input[type="radio"] {
         }
 
     }
+
     .logo-text {
         font-size:5vh !important;
     }
@@ -204,28 +215,34 @@ input[type="radio"] {
     .shadow {
         width:100%;
     }
+
     .container {
         height: fit-content !important;
     }
+
     .logo-text {
         font-size:10vh !important;
     }
+
     .content {
         height:fit-content;
         font-size:7vh !important;
     }
+
     a {
         font-size:8vh !important;
         img {
             height:20vh;
         }
     }
+
     .menu {
         font-size:5vh;
         img {
             height:5vw
         }
     }
+
     .stickynote {
         transform: rotate(0deg) !important;
         iframe {
